@@ -29,18 +29,22 @@ const ProductList = React.memo(({ products, addToCart }) => {
   return (
     <div className="min-h-screen bg-gray-100 p-4 sm:p-6">
       <div className="max-w-7xl mx-auto">
-        {/* Search field */}
-        <div className="mb-6 sm:mb-8">
+        <div className="mb-6 sm:mb-8 flex items-center gap-4">
           <input
             type="text"
             value={search}
             onChange={handlerSearchChange}
             placeholder="Search events..."
-            className="w-full p-3 border border-gray-300 rounded-lg text-lg placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="flex-1 p-3 border border-gray-300 rounded-lg text-lg placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
+          <Link
+            to="/cart"
+            className="px-4 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg"
+          >
+            View Cart
+          </Link>
         </div>
 
-        {/* Product grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {sortedProduct.map((product) => {
             const isExpired = dayjs(product.validUntil).isBefore(currentDay);
@@ -48,7 +52,7 @@ const ProductList = React.memo(({ products, addToCart }) => {
             return (
               <div
                 key={product.id}
-                className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
+                className="bg-white rounded-lg shadow-sm hover:shadow-xl transition-shadow duration-200"
               >
                 <div className="p-4 sm:p-6">
                   <h2 className="text-xl sm:text-2xl font-bold text-gray-800">

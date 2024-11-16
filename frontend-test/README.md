@@ -44,7 +44,7 @@ A ticket-selling application for events, built with **React** and styled using *
 
 1. **C## lone the Repository**
    ```
-   git clone https://github.com/marcosbonet/CLORIANfrontend
+   git clone https://github.com/marcosbonet/clorian
    cd frontend-test
    Install Dependencies Ensure you have Node.js and npm installed. Then run:
    ```

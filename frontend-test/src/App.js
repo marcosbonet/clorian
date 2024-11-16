@@ -1,41 +1,26 @@
-import React from "react";
-import ProductList from "./components/ProductList";
-import productsData from "../src/assets/product.json";
+import React, { Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { addToCart } from "./redux/cartSlice";
-import ProductDetails from "./components/ProductDetails";
+const ProductsDetailsPage = React.lazy(() =>
+  import("./pages/ProductDetailsPage")
+);
+const ProductsListPage = React.lazy(() => import("./pages/ProductListPage"));
+const CartPage = React.lazy(() => import("./pages/CartPage"));
 
 function App() {
-  // const cart = useSelector((state) => state.cart.cart);
-  const dispatch = useDispatch();
-
-  const handlerAddToCart = (product) => {
-    dispatch(addToCart(product));
-  };
-
   return (
     <Router>
       <div className="min-h-screen bg-gray-100  flex flex-col justify-center items-center py-6 px-4 sm:px-6 lg:px8">
         <div className="w-full max-w-7xl mx-auto">
-          <h1 className="text-3xl font-bold text-gray-800 mb-6">
-            Event Tickets
-          </h1>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <ProductList
-                  products={productsData}
-                  addToCart={handlerAddToCart}
-                ></ProductList>
-              }
-            />
-            <Route
-              path="/product/:id"
-              element={<ProductDetails products={productsData} />}
-            ></Route>
-          </Routes>
+          <div className="flex justify-center items-center w-full ">
+            <h1 className="text-5xl font-bold text-gray-800">Event Tickets</h1>
+          </div>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Routes>
+              <Route path="/" element={<ProductsListPage />} />
+              <Route path="/product/:id" element={<ProductsDetailsPage />} />
+              <Route path="/cart" element={<CartPage />} />
+            </Routes>
+          </Suspense>
         </div>
       </div>
     </Router>
