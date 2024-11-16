@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "name": "Rock Festival 2024",
+    "description": "Enjoy the best rock bands live.",
+    "validUntil": "2024-08-15",
+    "price": 49.99
+  },
+  {
+    "id": 2,
+    "name": "Jazz Night Gala",
+    "description": "An elegant evening of jazz music.",
+    "validUntil": "2023-10-10",
+    "price": 29.99
+  },
+  {
+    "id": 3,
+    "name": "Comedy Show - Stand-Up Stars",
+    "description": "A night full of laughter with top comedians.",
+    "validUntil": "2024-03-20",
+    "price": 19.99
+  },
+  {
+    "id": 4,
+    "name": "Classical Music Concert",
+    "description": "Orchestra performing Beethoven's greatest hits.",
+    "validUntil": "2022-12-01",
+    "price": 59.99
+  },
+  {
+    "id": 5,
+    "name": "Food Festival Entry",
+    "description": "Taste food from all over the world.",
+    "validUntil": "2023-11-30",
+    "price": 14.99
+  },
+  {
+    "id": 6,
+    "name": "Basketball Finals 2024",
+    "description": "Watch the championship live in the arena.",
+    "validUntil": "2024-06-01",
+    "price": 99.99
+  },
+  {
+    "id": 7,
+    "name": "Theater Play - Hamlet",
+    "description": "A stunning modern adaptation of Shakespeare's Hamlet.",
+    "validUntil": "2023-05-15",
+    "price": 39.99
+  },
+  {
+    "id": 8,
+    "name": "Art Exhibition Pass",
+    "description": "Access to the most exclusive modern art gallery.",
+    "validUntil": "2024-12-31",
+    "price": 24.99
+  },
+  {
+    "id": 9,
+    "name": "Science Fair Entry",
+    "description": "Explore the latest in technology and innovation.",
+    "validUntil": "2023-09-01",
+    "price": 9.99
+  },
+  {
+    "id": 10,
+    "name": "Football Match: Stars vs Legends",
+    "description": "A charity football match featuring famous players.",
+    "validUntil": "2023-11-10",
+    "price": 49.99
+  },
+  {
+    "id": 11,
+    "name": "Movie Premiere: Space Odyssey",
+    "description": "Be the first to watch the epic new sci-fi movie.",
+    "validUntil": "2024-02-15",
+    "price": 14.99
+  },
+  {
+    "id": 12,
+    "name": "Pop Concert 2024",
+    "description": "Top pop artists performing live.",
+    "validUntil": "2024-09-10",
+    "price": 79.99
+  },
+  {
+    "id": 13,
+    "name": "Magic Show Spectacular",
+    "description": "Witness mind-blowing illusions and tricks.",
+    "validUntil": "2022-11-25",
+    "price": 34.99
+  },
+  {
+    "id": 14,
+    "name": "Carnival Entry Pass",
+    "description": "Unlimited rides and attractions.",
+    "validUntil": "2024-05-10",
+    "price": 19.99
+  },
+  {
+    "id": 15,
+    "name": "Opera Night: La Traviata",
+    "description": "A breathtaking performance of Verdi's masterpiece.",
+    "validUntil": "2023-02-18",
+    "price": 69.99
+  },
+  {
+    "id": 16,
+    "name": "Festival of Lights Pass",
+    "description": "Experience stunning light shows and installations.",
+    "validUntil": "2024-07-20",
+    "price": 12.99
+  },
+  {
+    "id": 17,
+    "name": "Open-Air Cinema Night",
+    "description": "Watch a classic movie under the stars.",
+    "validUntil": "2023-06-15",
+    "price": 9.99
+  },
+  {
+    "id": 18,
+    "name": "Cultural Dance Show",
+    "description": "Traditional dance performances from around the world.",
+    "validUntil": "2023-12-05",
+    "price": 29.99
+  },
+  {
+    "id": 19,
+    "name": "Technology Expo",
+    "description": "See the future of technology and gadgets.",
+    "validUntil": "2024-03-01",
+    "price": 19.99
+  },
+  {
+    "id": 20,
+    "name": "Holiday Market Entry",
+    "description": "Shop unique gifts and enjoy festive treats.",
+    "validUntil": "2023-12-31",
+    "price": 4.99
+  },
+  {
+    "id": 21,
+    "name": "Yoga Retreat Pass",
+    "description": "A day of relaxation and meditation.",
+    "validUntil": "2023-09-10",
+    "price": 49.99
+  },
+  {
+    "id": 22,
+    "name": "Circus Performance",
+    "description": "An incredible show with acrobats and clowns.",
+    "validUntil": "2024-11-15",
+    "price": 39.99
+  },
+  {
+    "id": 23,
+    "name": "Kids' Science Workshop",
+    "description": "Interactive learning for young minds.",
+    "validUntil": "2023-08-20",
+    "price": 14.99
+  },
+  {
+    "id": 24,
+    "name": "Beer Festival Entry",
+    "description": "Sample the best craft beers from around the world.",
+    "validUntil": "2022-10-05",
+    "price": 24.99
+  },
+  {
+    "id": 25,
+    "name": "Winter Wonderland Pass",
+    "description": "Ice skating, festive stalls, and more.",
+    "validUntil": "2024-12-15",
+    "price": 29.99
+  }
+]
