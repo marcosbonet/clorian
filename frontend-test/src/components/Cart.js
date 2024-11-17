@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const dispatch = useDispatch();
-  const cartItems = useSelector((state) => state.cart.cart);
+  const cartItems = useSelector((state) => state.cart.cart || []);
   console.log(cartItems);
   const currentDay = dayjs();
   const navigate = useNavigate();
@@ -16,10 +16,11 @@ const Cart = () => {
   const handleClearCart = () => {
     dispatch(clearCart());
   };
-  const total = cartItems.cart.reduce(
-    (acc, item) => acc + item.price * item.quantity,
-    0
-  );
+
+  const cartItem = cartItems.cart;
+  const total = Array.isArray(cartItem)
+    ? cartItem.reduce((acc, item) => acc + item.price * item.quantity, 0)
+    : 0;
 
   return (
     <div className="p-6 bg-white shadow-md rounded-lg">
@@ -30,12 +31,12 @@ const Cart = () => {
       >
         Back
       </button>
-      {cartItems.cart.length === 0 ? (
+      {cartItem.length === 0 ? (
         <p>Your cart is empty</p>
       ) : (
         <div>
           <div className="space-y-4">
-            {cartItems.cart.map((item) => {
+            {cartItem.map((item) => {
               const isExpired = dayjs(item.validUntil).isBefore(currentDay);
 
               return (

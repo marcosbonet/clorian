@@ -18,7 +18,10 @@ const ProductDetails = ({ products }) => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center">
-      <div className="bg-white border rounded-lg shadow-lg p-6 max-w-md w-full">
+      <div
+        data-testid="product-container"
+        className="bg-white border rounded-lg shadow-lg p-6 max-w-md w-full"
+      >
         <button
           onClick={() => navigate(-1)}
           className="px-4 py-2 mb-4 bg-gray-300 rounded-md text-gray-800 hover:bg-gray-400 transition-colors"
